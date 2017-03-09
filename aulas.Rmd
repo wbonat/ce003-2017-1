@@ -1,0 +1,71 @@
+---
+title: "Histórico das aulas do curso"
+output:
+  html_document:
+    toc: false
+---
+
+```{r setup, include=FALSE}
+source("setup_knitr.R")
+```
+
+Abaixo o histórico de atividades realizadas em classe e atividades extra
+classe aplicadas.
+
+```{r, eval=FALSE, include=FALSE}
+## Gera a lista com as datas de todas as aulas. O resultado do último
+## comando pode ser copiado direto para o documento
+datas.qua <- seq.Date(as.Date("2017-02-22"), as.Date("2017-06-21"),
+                      by = "week")
+datas.qua <- format.Date(datas.qua, format = "%d/%m")
+datas.sex <- seq.Date(as.Date("2017-02-24"), as.Date("2017-06-23"),
+                      by = "week")
+datas.sex <- format.Date(datas.sex, format = "%d/%m")
+cat(paste0("- **", datas.qua, "**:\n", "- **", datas.sex, "**:\n"))
+```
+
+- **22/02**: Apresentação da disciplina.
+- **24/02**: Conceitos de amostragem.
+- **01/03**: Recesso.
+- **03/03**: Introdução à Análise Exploratória de Dados.
+- **08/03**: Avaliação 1.
+- **10/03**: Probabilidades.
+- **15/03**: Exercicíos - Probabilidades.
+- **17/03**: Avaliação 2.
+- **22/03**: Variáveis aleatórias discretas.
+- **24/03**: Exercícios - Variáveis aleatórias discretas.
+- **29/03**: Avaliação 3.
+- **31/03**: Medidas resumo.
+- **05/04**: Exercícios - medidas Resumo.
+- **07/04**: Avaliação 4.
+- **12/04**: Variáveis aleatórias bidimensionais.
+- **14/04**: Feriado.
+- **19/04**: Exercícios - Variáveis aleatórias bidimensionais.
+- **21/04**: Feriado.
+- **26/04**: Avaliação 5.
+- **28/04**: Variáveis aleatórias contínuas.
+- **03/05**: Exercícios - Variáveis aleatórias contínuas.
+- **05/05**: Avaliação 6.
+- **10/05**: Inferência estatística - Estimação.
+- **12/05**: Exercícios - Estimação.
+- **17/05**: Avaliação 7.
+- **19/05**: Testes de hipóteses.
+- **24/05**: Exercícios - Testes de hipóteses.
+- **26/05**: Avaliação 8.
+- **31/05**: Tópicos especiais.
+- **02/06**: Exercícios - Tópicos especiais.
+- **07/06**: Avaliação 9.
+- **09/06**: Aula de revisão.
+- **14/06**: 
+- **16/06**: Recesso.
+- **21/06**: Segunda chamada.
+- **23/06**: 
+- **05/07**: Final. 
+
+## Exercícios
+
+- Lista 1: Capítulo 1. Seção 1.1 Ex. 1,2 e 3. Seção 1.2 Ex. 1 e 4. Seção 1.4 Ex. 1,3,5,8,9,12,18 e 19.
+
+## Notas
+
+As notas estão disponíveis [nesta página](notas.html).

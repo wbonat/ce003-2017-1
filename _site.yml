@@ -1,0 +1,35 @@
+name: "CE001"
+output_dir: "."
+exclude: ["README.md"]
+output:
+  html_document:
+    theme: flatly
+    highlight: default
+    code_folding: hide
+    number_sections: false
+    toc: true
+    toc_depth: 4
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    includes:
+      in_header: analytics.html
+      after_body: footer.html
+navbar:
+  title: "CE001"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Aulas"
+      href: aulas.html
+    - text: "Referências"
+      href: referencias.html
+    - text: "Programas"
+      href: recursos.html
+    - text: "Materiais"
+      menu:
+      - text: "Introdução à Análise Exploratória de Dados [PDF]"
+        href: Slides/Aula1.pdf
+  right:
+    - text: GitHub
+      href: https://github.com/wbonat/ce001n-2017-1
