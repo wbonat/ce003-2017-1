@@ -16,13 +16,13 @@ source("setup_knitr.R")
 
 # Detalhes da oferta da disciplina
 
-- **Curso:** Ciências Biológicas (N)
+- **Curso:** Geografia (N)
 - **Período:** primeiro semestre de 2017
 - **Professor Responsável:** [Wagner Hugo Bonat][], ([LEG][]:
   Laboratório de Estatística e Geoinformação, sala 227, prédio de Exatas)
 - **Horários e Locais:**
-    - Quarta, 18:30 - 20:10h, **PA5**
-    - Sexta, 18:30 - 20:10h, **PA3**
+    - Terça, 09:30 - 11:30h, **PA5**
+    - Sexta, 09:30 - 11:30h, **PA3**
 - **Horários de atendimento do professor:**
     - Quintas e sextas, 14:00-18:00 (preferenciais). Outros horários
       podem ser agendados previamente por email.
