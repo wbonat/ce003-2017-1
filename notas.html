@@ -245,7 +245,338 @@ $(document).ready(function () {
 </div>
 
 
-<p>Nada ainda.</p>
+<pre class="r"><code>prova1 &lt;- read.csv(&quot;/home/wagner/Dropbox/Cursos/EstatísticaBásica/Geografia/Prova1Notas.csv&quot;, header = TRUE)
+kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;), digits = 2)</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Alunos.matriculados</th>
+<th align="center">Prova.1</th>
+<th align="center">Prova.2</th>
+<th align="center">Prova.3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1 10F GRR20173330 ANA PAULA RAK ROBERTO</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+</tr>
+<tr class="even">
+<td align="left">2 10F GRR20176313 ARTHUR VILELA ORTIZ</td>
+<td align="center">12</td>
+<td align="center">9</td>
+<td align="center">9</td>
+</tr>
+<tr class="odd">
+<td align="left">3 10F GRR20173345 BRUNA BENATO RUTYNA</td>
+<td align="center">14</td>
+<td align="center">13</td>
+<td align="center">11</td>
+</tr>
+<tr class="even">
+<td align="left">4 10F GRR20173344 CAROLINA SANROMAN DOS REIS SANT ANNA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">8</td>
+</tr>
+<tr class="odd">
+<td align="left">5 10F GRR20173328 ELTON VINICIUS KRAUSS</td>
+<td align="center">13</td>
+<td align="center">9</td>
+<td align="center">9</td>
+</tr>
+<tr class="even">
+<td align="left">6 10F GRR20142859 FERNANDO MENDES DE SOUZA</td>
+<td align="center">13</td>
+<td align="center">8</td>
+<td align="center">7</td>
+</tr>
+<tr class="odd">
+<td align="left">7 10F GRR20173386 FERNANDO RICARDO ROSTOCK MANFRON</td>
+<td align="center">10</td>
+<td align="center">13</td>
+<td align="center">9</td>
+</tr>
+<tr class="even">
+<td align="left">8 10F GRR20173334 GIAN FERREIRA DE SOUZA</td>
+<td align="center">5</td>
+<td align="center">10</td>
+<td align="center">10</td>
+</tr>
+<tr class="odd">
+<td align="left">9 18F GRR20142559 GIORGIO TAFFARELI MENEGAT</td>
+<td align="center">9</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+</tr>
+<tr class="even">
+<td align="left">10 10F GRR20173379 GUILHERME BUCHMANN MARIA DO VALLE</td>
+<td align="center">14</td>
+<td align="center">10</td>
+<td align="center">11</td>
+</tr>
+<tr class="odd">
+<td align="left">11 10F GRR20158938 GUILHERME ESTEVES TEIXEIRA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+</tr>
+<tr class="even">
+<td align="left">12 10F GRR20174481 GUSTAVO PROENÇA DE SOUZA</td>
+<td align="center">7</td>
+<td align="center">NA</td>
+<td align="center">8</td>
+</tr>
+<tr class="odd">
+<td align="left">13 10F GRR20173363 GUSTAVO RALDI STORCK</td>
+<td align="center">14</td>
+<td align="center">14</td>
+<td align="center">14</td>
+</tr>
+<tr class="even">
+<td align="left">14 18F GRR20148518 JACKSON GOLDBACH</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">9</td>
+</tr>
+<tr class="odd">
+<td align="left">15 18F GRR20135639 JANAINA BANDEIRA FERNANDES</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+</tr>
+<tr class="even">
+<td align="left">16 10F GRR20132317 JESSICA LUANA MALIN</td>
+<td align="center">12</td>
+<td align="center">10</td>
+<td align="center">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">17 10F GRR20173332 JOÃO CARLOS DE JESUS KOCHAN</td>
+<td align="center">12</td>
+<td align="center">10</td>
+<td align="center">13</td>
+</tr>
+<tr class="even">
+<td align="left">18 10F GRR20173572 JOÃO LUCAS DOS ANJOS</td>
+<td align="center">6</td>
+<td align="center">9</td>
+<td align="center">6</td>
+</tr>
+<tr class="odd">
+<td align="left">19 10F GRR20132396 JOAO VITOR HOEFFLING RIBAS PINTO</td>
+<td align="center">13</td>
+<td align="center">11</td>
+<td align="center">9</td>
+</tr>
+<tr class="even">
+<td align="left">20 10F GRR20170196 JOSE CARLOS DALLA COSTA JÚNIOR</td>
+<td align="center">9</td>
+<td align="center">13</td>
+<td align="center">7</td>
+</tr>
+<tr class="odd">
+<td align="left">21 10F GRR20173431 JOYCE KAROLINE DE ANDRADE LOURENÇO</td>
+<td align="center">10</td>
+<td align="center">10</td>
+<td align="center">8</td>
+</tr>
+<tr class="even">
+<td align="left">22 09B GRR20110072 KAEL DA SILVA PETELAK</td>
+<td align="center">3</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">23 18F GRR20132591 KARINE CHEVA NASCIMENTO</td>
+<td align="center">10</td>
+<td align="center">7</td>
+<td align="center">9</td>
+</tr>
+<tr class="even">
+<td align="left">24 10F GRR20173327 LEONARDO MATHEUS LANGA</td>
+<td align="center">13</td>
+<td align="center">12</td>
+<td align="center">10</td>
+</tr>
+<tr class="odd">
+<td align="left">25 10F GRR20176074 LUAN MARCUS DOS REIS SILVA</td>
+<td align="center">12</td>
+<td align="center">10</td>
+<td align="center">10</td>
+</tr>
+<tr class="even">
+<td align="left">26 10F GRR20133289 MARIA GABRIELA DAMAS</td>
+<td align="center">10</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">27 10F GRR20173338 MARIANA PIRES RIBEIRO</td>
+<td align="center">12</td>
+<td align="center">12</td>
+<td align="center">10</td>
+</tr>
+<tr class="even">
+<td align="left">28 10F GRR20173329 MARTHA CAVALHEIRO BOCK</td>
+<td align="center">11</td>
+<td align="center">9</td>
+<td align="center">9</td>
+</tr>
+<tr class="odd">
+<td align="left">29 10F GRR20173482 MATEUS JOÃO CORDDEIRO SCHMOELLER DE LIMA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+</tr>
+<tr class="even">
+<td align="left">30 10F GRR20173347 MATEUS LUCIANI DOS SANTOS</td>
+<td align="center">10</td>
+<td align="center">10</td>
+<td align="center">10</td>
+</tr>
+<tr class="odd">
+<td align="left">31 10F GRR20173333 NATHALIE VIEIRA LUCION</td>
+<td align="center">12</td>
+<td align="center">6</td>
+<td align="center">9</td>
+</tr>
+<tr class="even">
+<td align="left">32 10F GRR20176091 NICOLAS DOMBROWSKI NETTO</td>
+<td align="center">12</td>
+<td align="center">13</td>
+<td align="center">12</td>
+</tr>
+<tr class="odd">
+<td align="left">33 10F GRR20121919 NORRAH MATHEUS AMARAL DA COSTA</td>
+<td align="center">9</td>
+<td align="center">NA</td>
+<td align="center">6</td>
+</tr>
+<tr class="even">
+<td align="left">34 10F GRR20167265 PEDRO HENRIQUE STOCK LAHUD</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">35 10F GRR20173373 PEDRO SILVA SOARES DE CARVALHO</td>
+<td align="center">12</td>
+<td align="center">NA</td>
+<td align="center">10</td>
+</tr>
+<tr class="even">
+<td align="left">36 10F GRR20110065 RAYMAN ALUY VIRMOND JUK</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">37 10F GRR20173378 RENATA EMANUELE PELANDA</td>
+<td align="center">10</td>
+<td align="center">11</td>
+<td align="center">8</td>
+</tr>
+<tr class="even">
+<td align="left">38 10F GRR20176467 RITA CASIANA HAIDAMACHA</td>
+<td align="center">10</td>
+<td align="center">11</td>
+<td align="center">7</td>
+</tr>
+<tr class="odd">
+<td align="left">39 10F GRR20173341 SOFIA BERGER RIBEIRO</td>
+<td align="center">12</td>
+<td align="center">14</td>
+<td align="center">13</td>
+</tr>
+<tr class="even">
+<td align="left">40 10F GRR20173346 THOMÁS YU YAMAMOTO</td>
+<td align="center">13</td>
+<td align="center">10</td>
+<td align="center">10</td>
+</tr>
+<tr class="odd">
+<td align="left">41 10F GRR20175280 THUANY NUMER</td>
+<td align="center">12</td>
+<td align="center">8</td>
+<td align="center">6</td>
+</tr>
+<tr class="even">
+<td align="left">42 10F GRR20176824 UTARO BORGES</td>
+<td align="center">6</td>
+<td align="center">11</td>
+<td align="center">2</td>
+</tr>
+<tr class="odd">
+<td align="left">43 10F GRR20173380 VÍTOR AUGUSTO HATZFELD DE CASTRO FEITOSA</td>
+<td align="center">14</td>
+<td align="center">12</td>
+<td align="center">6</td>
+</tr>
+<tr class="even">
+<td align="left">44 10F GRR20144555 YANARA ROSA DA SILV</td>
+<td align="center">8</td>
+<td align="center">7</td>
+<td align="center">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">Amanda Ventura Firmino da Silva</td>
+<td align="center">13</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
+</tr>
+<tr class="even">
+<td align="left">Alan Matias Baltazar</td>
+<td align="center">NA</td>
+<td align="center">11</td>
+<td align="center">7</td>
+</tr>
+<tr class="odd">
+<td align="left">Quéops Miguel Silva</td>
+<td align="center">NA</td>
+<td align="center">10</td>
+<td align="center">NA</td>
+</tr>
+<tr class="even">
+<td align="left">Maelyn Tallini</td>
+<td align="center">NA</td>
+<td align="center">9</td>
+<td align="center">6</td>
+</tr>
+<tr class="odd">
+<td align="left">João Guilherme Hansen de Araujo</td>
+<td align="center">NA</td>
+<td align="center">9</td>
+<td align="center">7</td>
+</tr>
+<tr class="even">
+<td align="left">Aléxia Gabriela Pedroso Partica</td>
+<td align="center">NA</td>
+<td align="center">11</td>
+<td align="center">9</td>
+</tr>
+<tr class="odd">
+<td align="left">Guilherme Strafasson dos Santos</td>
+<td align="center">NA</td>
+<td align="center">11</td>
+<td align="center">11</td>
+</tr>
+<tr class="even">
+<td align="left">Wesley dos Santos</td>
+<td align="center">NA</td>
+<td align="center">9</td>
+<td align="center">5</td>
+</tr>
+<tr class="odd">
+<td align="left">Bruno Gaio Fischer</td>
+<td align="center">NA</td>
+<td align="center">12</td>
+<td align="center">11</td>
+</tr>
+</tbody>
+</table>
 
 <center>
   <hr width="100%" size="3px">
