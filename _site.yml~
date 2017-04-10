@@ -30,6 +30,12 @@ navbar:
       menu:
       - text: "Introdução à Análise Exploratória de Dados [PDF]"
         href: Slides/Aula1.pdf
+      - text: "Probabilidades [PDF]"
+        href: Slides/Aula2.pdf
+      - text: "Variáveis aleatórias discretas [PDF]"
+        href: Slides/Aula3.pdf
+      - text: "Medidas resumo [PDF]"
+        href: Slides/Aula4.pdf
   right:
     - text: GitHub
       href: https://github.com/wbonat/ce001n-2017-1

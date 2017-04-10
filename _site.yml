@@ -36,6 +36,8 @@ navbar:
         href: Slides/Aula3.pdf
       - text: "Medidas resumo [PDF]"
         href: Slides/Aula4.pdf
+      - text: "Variáveis bidimensionais [PDF]"
+        href: Slides/Aula4.pdf
   right:
     - text: GitHub
       href: https://github.com/wbonat/ce001n-2017-1
