@@ -37,7 +37,13 @@ navbar:
       - text: "Medidas resumo [PDF]"
         href: Slides/Aula4.pdf
       - text: "Variáveis bidimensionais [PDF]"
-        href: Slides/Aula4.pdf
+        href: Slides/Aula5.pdf
+      - text: "Variáveis aleatórias contínuas [PDF]"
+        href: Slides/Aula6.pdf
+      - text: "Inferência estatística [PDF]"
+        href: Slides/Aula7.pdf
+      - text: "R script - Inferência estatística [PDF]"
+        href: Slides/Aula7.pdf
   right:
     - text: GitHub
       href: https://github.com/wbonat/ce001n-2017-1
