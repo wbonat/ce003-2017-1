@@ -235,7 +235,13 @@ $(document).ready(function () {
       <a href="Slides/Aula7.pdf">Inferência estatística [PDF]</a>
     </li>
     <li>
-      <a href="Slides/Aula7.pdf">R script - Inferência estatística [PDF]</a>
+      <a href="Slides/Script1.R">R script - Inferência estatística [PDF]</a>
+    </li>
+    <li>
+      <a href="Slides/Aula8.pdf">Teste de hipóteses [PDF]</a>
+    </li>
+    <li>
+      <a href="Slides/Aula9.pdf">Tópicos Especiais [PDF]</a>
     </li>
   </ul>
 </li>
@@ -267,7 +273,7 @@ $(document).ready(function () {
 
 
 <pre class="r"><code>prova1 &lt;- read.csv(&quot;/home/wagner/Dropbox/Cursos/EstatísticaBásica/Geografia/Prova1Notas.csv&quot;, header = TRUE)
-kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;), digits = 2)</code></pre>
+kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;), digits = 2)</code></pre>
 <table>
 <thead>
 <tr class="header">
@@ -278,11 +284,15 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <th align="center">Prova.4</th>
 <th align="center">Prova.5</th>
 <th align="center">Prova.6</th>
+<th align="center">Prova.7</th>
+<th align="center">Prova.8</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left">1 10F GRR20173330 ANA PAULA RAK ROBERTO</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
@@ -298,6 +308,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">10</td>
 <td align="center">10</td>
 <td align="center">9</td>
+<td align="center">9</td>
+<td align="center">10</td>
 </tr>
 <tr class="odd">
 <td align="left">3 10F GRR20173345 BRUNA BENATO RUTYNA</td>
@@ -307,6 +319,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">9</td>
 <td align="center">11</td>
 <td align="center">11</td>
+<td align="center">7</td>
+<td align="center">5</td>
 </tr>
 <tr class="even">
 <td align="left">4 10F GRR20173344 CAROLINA SANROMAN DOS REIS SANT ANNA</td>
@@ -314,6 +328,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">NA</td>
 <td align="center">8</td>
 <td align="center">10</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 </tr>
@@ -325,6 +341,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">10</td>
 <td align="center">8</td>
 <td align="center">12</td>
+<td align="center">9</td>
+<td align="center">11</td>
 </tr>
 <tr class="even">
 <td align="left">6 10F GRR20142859 FERNANDO MENDES DE SOUZA</td>
@@ -334,6 +352,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">12</td>
 <td align="center">9</td>
 <td align="center">5</td>
+<td align="center">10</td>
+<td align="center">10</td>
 </tr>
 <tr class="odd">
 <td align="left">7 10F GRR20173386 FERNANDO RICARDO ROSTOCK MANFRON</td>
@@ -342,6 +362,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">9</td>
 <td align="center">10</td>
 <td align="center">9</td>
+<td align="center">8</td>
+<td align="center">7</td>
 <td align="center">8</td>
 </tr>
 <tr class="even">
@@ -352,6 +374,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">7</td>
 <td align="center">5</td>
 <td align="center">8</td>
+<td align="center">6</td>
+<td align="center">6</td>
 </tr>
 <tr class="odd">
 <td align="left">9 18F GRR20142559 GIORGIO TAFFARELI MENEGAT</td>
@@ -361,6 +385,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">12</td>
 <td align="center">10</td>
 <td align="center">NA</td>
+<td align="center">6</td>
+<td align="center">9</td>
 </tr>
 <tr class="even">
 <td align="left">10 10F GRR20173379 GUILHERME BUCHMANN MARIA DO VALLE</td>
@@ -369,6 +395,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">11</td>
 <td align="center">13</td>
 <td align="center">10</td>
+<td align="center">NA</td>
+<td align="center">7</td>
 <td align="center">NA</td>
 </tr>
 <tr class="odd">
@@ -379,6 +407,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">7</td>
 <td align="center">NA</td>
 <td align="center">11</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 </tr>
 <tr class="even">
 <td align="left">12 10F GRR20174481 GUSTAVO PROENÇA DE SOUZA</td>
@@ -388,6 +418,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">11</td>
 <td align="center">9</td>
 <td align="center">8</td>
+<td align="center">5</td>
+<td align="center">7</td>
 </tr>
 <tr class="odd">
 <td align="left">13 10F GRR20173363 GUSTAVO RALDI STORCK</td>
@@ -397,12 +429,16 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">12</td>
 <td align="center">9</td>
 <td align="center">12</td>
+<td align="center">13</td>
+<td align="center">14</td>
 </tr>
 <tr class="even">
 <td align="left">14 18F GRR20148518 JACKSON GOLDBACH</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">9</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
@@ -415,6 +451,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">10</td>
 <td align="center">8</td>
 <td align="center">NA</td>
+<td align="center">4</td>
+<td align="center">6</td>
 </tr>
 <tr class="even">
 <td align="left">16 10F GRR20132317 JESSICA LUANA MALIN</td>
@@ -424,6 +462,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">9</td>
 <td align="center">10</td>
 <td align="center">7</td>
+<td align="center">3</td>
+<td align="center">6</td>
 </tr>
 <tr class="odd">
 <td align="left">17 10F GRR20173332 JOÃO CARLOS DE JESUS KOCHAN</td>
@@ -432,6 +472,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">13</td>
 <td align="center">11</td>
 <td align="center">13</td>
+<td align="center">11</td>
+<td align="center">6</td>
 <td align="center">11</td>
 </tr>
 <tr class="even">
@@ -442,6 +484,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">10</td>
 <td align="center">5</td>
 <td align="center">8</td>
+<td align="center">7</td>
+<td align="center">8</td>
 </tr>
 <tr class="odd">
 <td align="left">19 10F GRR20132396 JOAO VITOR HOEFFLING RIBAS PINTO</td>
@@ -451,6 +495,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">9</td>
 <td align="center">9</td>
 <td align="center">10</td>
+<td align="center">9</td>
+<td align="center">9</td>
 </tr>
 <tr class="even">
 <td align="left">20 10F GRR20170196 JOSE CARLOS DALLA COSTA JÚNIOR</td>
@@ -460,6 +506,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">10</td>
 <td align="center">10</td>
 <td align="center">6</td>
+<td align="center">5</td>
+<td align="center">7</td>
 </tr>
 <tr class="odd">
 <td align="left">21 10F GRR20173431 JOYCE KAROLINE DE ANDRADE LOURENÇO</td>
@@ -468,6 +516,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">8</td>
 <td align="center">10</td>
 <td align="center">5</td>
+<td align="center">8</td>
+<td align="center">7</td>
 <td align="center">8</td>
 </tr>
 <tr class="even">
@@ -478,6 +528,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">10</td>
 <td align="center">9</td>
 <td align="center">NA</td>
+<td align="center">5</td>
+<td align="center">10</td>
 </tr>
 <tr class="odd">
 <td align="left">23 18F GRR20132591 KARINE CHEVA NASCIMENTO</td>
@@ -487,6 +539,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">10</td>
 <td align="center">7</td>
 <td align="center">6</td>
+<td align="center">6</td>
+<td align="center">8</td>
 </tr>
 <tr class="even">
 <td align="left">24 10F GRR20173327 LEONARDO MATHEUS LANGA</td>
@@ -496,6 +550,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">11</td>
 <td align="center">9</td>
 <td align="center">11</td>
+<td align="center">9</td>
+<td align="center">8</td>
 </tr>
 <tr class="odd">
 <td align="left">25 10F GRR20176074 LUAN MARCUS DOS REIS SILVA</td>
@@ -505,6 +561,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">9</td>
 <td align="center">10</td>
 <td align="center">8</td>
+<td align="center">6</td>
+<td align="center">11</td>
 </tr>
 <tr class="even">
 <td align="left">26 10F GRR20133289 MARIA GABRIELA DAMAS</td>
@@ -514,6 +572,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">11</td>
 <td align="center">6</td>
 <td align="center">7</td>
+<td align="center">7</td>
+<td align="center">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">27 10F GRR20173338 MARIANA PIRES RIBEIRO</td>
@@ -523,6 +583,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">11</td>
 <td align="center">9</td>
 <td align="center">11</td>
+<td align="center">7</td>
+<td align="center">6</td>
 </tr>
 <tr class="even">
 <td align="left">28 10F GRR20173329 MARTHA CAVALHEIRO BOCK</td>
@@ -532,9 +594,13 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">9</td>
 <td align="center">12</td>
 <td align="center">11</td>
+<td align="center">6</td>
+<td align="center">9</td>
 </tr>
 <tr class="odd">
 <td align="left">29 10F GRR20173482 MATEUS JOÃO CORDDEIRO SCHMOELLER DE LIMA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
@@ -550,6 +616,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">5</td>
 <td align="center">10</td>
 <td align="center">11</td>
+<td align="center">6</td>
+<td align="center">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">31 10F GRR20173333 NATHALIE VIEIRA LUCION</td>
@@ -559,6 +627,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">9</td>
 <td align="center">9</td>
 <td align="center">11</td>
+<td align="center">7</td>
+<td align="center">7</td>
 </tr>
 <tr class="even">
 <td align="left">32 10F GRR20176091 NICOLAS DOMBROWSKI NETTO</td>
@@ -568,6 +638,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">12</td>
 <td align="center">13</td>
 <td align="center">11</td>
+<td align="center">6</td>
+<td align="center">8</td>
 </tr>
 <tr class="odd">
 <td align="left">33 10F GRR20121919 NORRAH MATHEUS AMARAL DA COSTA</td>
@@ -577,9 +649,13 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">9</td>
 <td align="center">8</td>
 <td align="center">6</td>
+<td align="center">NA</td>
+<td align="center">11</td>
 </tr>
 <tr class="even">
 <td align="left">34 10F GRR20167265 PEDRO HENRIQUE STOCK LAHUD</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
@@ -595,6 +671,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">9</td>
 <td align="center">9</td>
 <td align="center">9</td>
+<td align="center">7</td>
+<td align="center">8</td>
 </tr>
 <tr class="even">
 <td align="left">36 10F GRR20110065 RAYMAN ALUY VIRMOND JUK</td>
@@ -604,6 +682,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">6</td>
 </tr>
 <tr class="odd">
 <td align="left">37 10F GRR20173378 RENATA EMANUELE PELANDA</td>
@@ -613,6 +693,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">9</td>
 <td align="center">7</td>
 <td align="center">6</td>
+<td align="center">6</td>
+<td align="center">8</td>
 </tr>
 <tr class="even">
 <td align="left">38 10F GRR20176467 RITA CASIANA HAIDAMACHA</td>
@@ -622,6 +704,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">8</td>
 <td align="center">6</td>
 <td align="center">8</td>
+<td align="center">7</td>
+<td align="center">7</td>
 </tr>
 <tr class="odd">
 <td align="left">39 10F GRR20173341 SOFIA BERGER RIBEIRO</td>
@@ -631,6 +715,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">11</td>
 <td align="center">9</td>
 <td align="center">11</td>
+<td align="center">10</td>
+<td align="center">10</td>
 </tr>
 <tr class="even">
 <td align="left">40 10F GRR20173346 THOMÁS YU YAMAMOTO</td>
@@ -640,6 +726,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">12</td>
 <td align="center">7</td>
 <td align="center">6</td>
+<td align="center">8</td>
+<td align="center">9</td>
 </tr>
 <tr class="odd">
 <td align="left">41 10F GRR20175280 THUANY NUMER</td>
@@ -649,6 +737,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">8</td>
 <td align="center">8</td>
 <td align="center">8</td>
+<td align="center">7</td>
+<td align="center">7</td>
 </tr>
 <tr class="even">
 <td align="left">42 10F GRR20176824 UTARO BORGES</td>
@@ -658,6 +748,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">9</td>
 <td align="center">9</td>
 <td align="center">10</td>
+<td align="center">6</td>
+<td align="center">8</td>
 </tr>
 <tr class="odd">
 <td align="left">43 10F GRR20173380 VÍTOR AUGUSTO HATZFELD DE CASTRO FEITOSA</td>
@@ -667,6 +759,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">12</td>
 <td align="center">9</td>
 <td align="center">7</td>
+<td align="center">5</td>
+<td align="center">8</td>
 </tr>
 <tr class="even">
 <td align="left">44 10F GRR20144555 YANARA ROSA DA SILV</td>
@@ -676,10 +770,14 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Amanda Ventura Firmino da Silva</td>
 <td align="center">13</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
@@ -694,6 +792,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">13</td>
 <td align="center">8</td>
 <td align="center">12</td>
+<td align="center">7</td>
+<td align="center">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">Quéops Miguel Silva</td>
@@ -703,6 +803,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">11</td>
 <td align="center">10</td>
 <td align="center">7</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 </tr>
 <tr class="even">
 <td align="left">Maelyn Tallini</td>
@@ -712,6 +814,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">6</td>
 <td align="center">5</td>
 <td align="center">6</td>
+<td align="center">6</td>
+<td align="center">13</td>
 </tr>
 <tr class="odd">
 <td align="left">João Guilherme Hansen de Araujo</td>
@@ -719,6 +823,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">9</td>
 <td align="center">7</td>
 <td align="center">6</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 </tr>
@@ -730,6 +836,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">8</td>
 <td align="center">8</td>
 <td align="center">NA</td>
+<td align="center">6</td>
+<td align="center">9</td>
 </tr>
 <tr class="odd">
 <td align="left">Guilherme Strafasson dos Santos</td>
@@ -739,6 +847,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">7</td>
 <td align="center">7</td>
 <td align="center">6</td>
+<td align="center">6</td>
+<td align="center">9</td>
 </tr>
 <tr class="even">
 <td align="left">Wesley dos Santos</td>
@@ -746,6 +856,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">9</td>
 <td align="center">5</td>
 <td align="center">9</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
 </tr>
@@ -757,6 +869,8 @@ kable(prova1, align = c(&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">12</td>
 <td align="center">8</td>
 <td align="center">12</td>
+<td align="center">NA</td>
+<td align="center">NA</td>
 </tr>
 </tbody>
 </table>
