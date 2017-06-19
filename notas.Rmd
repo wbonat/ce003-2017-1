@@ -6,6 +6,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+require(knitr)
 source("setup_knitr.R")
 ```
 
