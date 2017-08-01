@@ -16,7 +16,7 @@ source("setup_knitr.R")
 
 # Detalhes da oferta da disciplina
 
-- **Curso:** Administraçao (M)
+- **Curso:** Administração (M)
 - **Período:** segundo semestre de 2017
 - **Professor Responsável:** [Wagner Hugo Bonat][], ([LEG][]:
   Laboratório de Estatística e Geoinformação, sala 227, prédio de Exatas)
