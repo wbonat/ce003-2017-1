@@ -1,5 +1,5 @@
 ---
-title: "CE001 - Bioestatística"
+title: "CE003 - Estatistica II"
 output:
   html_document:
     toc: false
@@ -16,17 +16,16 @@ source("setup_knitr.R")
 
 # Detalhes da oferta da disciplina
 
-- **Curso:** Geografia (N)
-- **Período:** primeiro semestre de 2017
+- **Curso:** Administraçao (M)
+- **Período:** segundo semestre de 2017
 - **Professor Responsável:** [Wagner Hugo Bonat][], ([LEG][]:
   Laboratório de Estatística e Geoinformação, sala 227, prédio de Exatas)
 - **Horários e Locais:**
-    - Terça, 09:30 - 11:30h, **PA5**
-    - Sexta, 09:30 - 11:30h, **PA3**
+    - Terça, 08:00 - 11:30h, **SALA 206**
 - **Horários de atendimento do professor:**
     - Quintas e sextas, 14:00-18:00 (preferenciais). Outros horários
       podem ser agendados previamente por email.
-- **Monitores de CE-001 do Depto. de Estatística:**
+- **Monitores de CE-003 do Depto. de Estatística:**
     - Local: **LABEST** (Laboratório de Estatística)
     - Horários de atendimento aos alunos: verificar no LABEST
 - **Frequência**: de acordo com as normas da Universidade, mínimo de 75%
@@ -36,9 +35,9 @@ source("setup_knitr.R")
     - A média final será a média simples das 9 provas (todas tem o mesmo
       peso).
 - **Datas importantes:** De acordo com a [Resolução 62/16 - CEPE][]:
-    - **20/02**: Início do semestre letivo
-    - **24/06**: Final do semestre letivo
-    - **03/07-08/07**: Período de exames
+    - **31/07**: Início do semestre letivo
+    - **02/12**: Final do semestre letivo
+    - **11/12-16/12**: Período de exames
 
 # Programa/objetivos da disciplina
 
