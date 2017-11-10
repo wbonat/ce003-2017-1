@@ -273,7 +273,7 @@ $(document).ready(function () {
 
 
 <pre class="r"><code>prova1 &lt;- read.csv(&quot;/home/wagner/Dropbox/Cursos/EstatísticaBásica/ADM20172/Notas.csv&quot;, header = TRUE)
-kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;, &quot;c&quot;), digits = 2)</code></pre>
+kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;, &quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;,&quot;c&quot;), digits = 2)</code></pre>
 <table>
 <thead>
 <tr class="header">
@@ -282,6 +282,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <th align="center">Prova.1</th>
 <th align="center">Prova.2</th>
 <th align="center">Prova.3</th>
+<th align="center">Prova.4</th>
+<th align="center">Média</th>
+<th align="center">Faltas</th>
+<th align="center">Situação</th>
 </tr>
 </thead>
 <tbody>
@@ -291,6 +295,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">60</td>
 <td align="center">20</td>
 <td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">20</td>
+<td align="center">6</td>
+<td align="center">Reprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20171095</td>
@@ -298,6 +306,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">34</td>
 <td align="center">33</td>
 <td align="center">46</td>
+<td align="center">60</td>
+<td align="center">43</td>
+<td align="center">0</td>
+<td align="center">Final</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20176501</td>
@@ -305,6 +317,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">73</td>
 <td align="center">47</td>
 <td align="center">46</td>
+<td align="center">73</td>
+<td align="center">60</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20176500</td>
@@ -312,6 +328,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">73</td>
 <td align="center">47</td>
 <td align="center">33</td>
+<td align="center">60</td>
+<td align="center">53</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20171098</td>
@@ -319,6 +339,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">73</td>
 <td align="center">33</td>
 <td align="center">60</td>
+<td align="center">67</td>
+<td align="center">58</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20171082</td>
@@ -326,6 +350,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">73</td>
 <td align="center">60</td>
 <td align="center">33</td>
+<td align="center">80</td>
+<td align="center">62</td>
+<td align="center">3</td>
+<td align="center">Final</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20173132</td>
@@ -333,6 +361,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">73</td>
 <td align="center">33</td>
 <td align="center">NA</td>
+<td align="center">33</td>
+<td align="center">35</td>
+<td align="center">2</td>
+<td align="center">Reprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20171067</td>
@@ -340,6 +372,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">60</td>
 <td align="center">60</td>
 <td align="center">46</td>
+<td align="center">60</td>
+<td align="center">57</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20169909</td>
@@ -347,6 +383,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">20</td>
 <td align="center">20</td>
 <td align="center">73</td>
+<td align="center">47</td>
+<td align="center">40</td>
+<td align="center">2</td>
+<td align="center">Final</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20171129</td>
@@ -354,6 +394,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">60</td>
 <td align="center">33</td>
 <td align="center">60</td>
+<td align="center">60</td>
+<td align="center">53</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20170155</td>
@@ -361,6 +405,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">46</td>
 <td align="center">60</td>
 <td align="center">73</td>
+<td align="center">53</td>
+<td align="center">58</td>
+<td align="center">1</td>
+<td align="center">Final</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20172217</td>
@@ -368,6 +416,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">100</td>
 <td align="center">33</td>
 <td align="center">73</td>
+<td align="center">NA</td>
+<td align="center">52</td>
+<td align="center">1</td>
+<td align="center">Final</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20176983</td>
@@ -375,6 +427,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">60</td>
 <td align="center">33</td>
 <td align="center">86</td>
+<td align="center">93</td>
+<td align="center">68</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20165877</td>
@@ -382,6 +438,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">73</td>
 <td align="center">73</td>
 <td align="center">100</td>
+<td align="center">87</td>
+<td align="center">83</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20171104</td>
@@ -389,6 +449,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">73</td>
 <td align="center">73</td>
 <td align="center">60</td>
+<td align="center">67</td>
+<td align="center">68</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20171077</td>
@@ -396,6 +460,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">47</td>
 <td align="center">60</td>
 <td align="center">73</td>
+<td align="center">73</td>
+<td align="center">63</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20171186</td>
@@ -403,6 +471,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">60</td>
 <td align="center">60</td>
 <td align="center">20</td>
+<td align="center">73</td>
+<td align="center">53</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20171050</td>
@@ -410,6 +482,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">34</td>
 <td align="center">17</td>
 <td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">13</td>
+<td align="center">6</td>
+<td align="center">Reprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20171054</td>
@@ -417,6 +493,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">60</td>
 <td align="center">47</td>
 <td align="center">60</td>
+<td align="center">47</td>
+<td align="center">53</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20177013</td>
@@ -424,6 +504,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">46</td>
 <td align="center">60</td>
 <td align="center">33</td>
+<td align="center">20</td>
+<td align="center">40</td>
+<td align="center">3</td>
+<td align="center">Final</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20129046</td>
@@ -431,6 +515,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">46</td>
 <td align="center">17</td>
 <td align="center">33</td>
+<td align="center">60</td>
+<td align="center">39</td>
+<td align="center">1</td>
+<td align="center">Final</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20165133</td>
@@ -438,6 +526,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">20</td>
 <td align="center">20</td>
 <td align="center">33</td>
+<td align="center">60</td>
+<td align="center">33</td>
+<td align="center">2</td>
+<td align="center">Reprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20176503</td>
@@ -445,6 +537,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">60</td>
 <td align="center">47</td>
 <td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">27</td>
+<td align="center">2</td>
+<td align="center">Reprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20176161</td>
@@ -452,6 +548,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">60</td>
 <td align="center">33</td>
 <td align="center">50</td>
+<td align="center">67</td>
+<td align="center">52</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20171099</td>
@@ -459,6 +559,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">60</td>
 <td align="center">60</td>
 <td align="center">33</td>
+<td align="center">53</td>
+<td align="center">52</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20171057</td>
@@ -466,6 +570,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">34</td>
 <td align="center">20</td>
 <td align="center">0</td>
+<td align="center">NA</td>
+<td align="center">14</td>
+<td align="center">3</td>
+<td align="center">Reprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20171157</td>
@@ -473,6 +581,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">73</td>
 <td align="center">67</td>
 <td align="center">33</td>
+<td align="center">60</td>
+<td align="center">58</td>
+<td align="center">2</td>
+<td align="center">Final</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20171174</td>
@@ -480,6 +592,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">73</td>
 <td align="center">47</td>
 <td align="center">20</td>
+<td align="center">93</td>
+<td align="center">58</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20171093</td>
@@ -487,6 +603,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">60</td>
 <td align="center">47</td>
 <td align="center">33</td>
+<td align="center">53</td>
+<td align="center">48</td>
+<td align="center">1</td>
+<td align="center">Final</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20171177</td>
@@ -494,6 +614,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">66</td>
 <td align="center">33</td>
 <td align="center">73</td>
+<td align="center">53</td>
+<td align="center">56</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20171142</td>
@@ -501,6 +625,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">60</td>
 <td align="center">20</td>
 <td align="center">33</td>
+<td align="center">33</td>
+<td align="center">37</td>
+<td align="center">2</td>
+<td align="center">Reprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20176505</td>
@@ -508,6 +636,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">47</td>
 <td align="center">60</td>
 <td align="center">46</td>
+<td align="center">53</td>
+<td align="center">52</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20173711</td>
@@ -515,6 +647,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">47</td>
 <td align="center">47</td>
 <td align="center">16</td>
+<td align="center">40</td>
+<td align="center">38</td>
+<td align="center">0</td>
+<td align="center">Reprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20171164</td>
@@ -522,6 +658,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">60</td>
 <td align="center">47</td>
 <td align="center">20</td>
+<td align="center">87</td>
+<td align="center">53</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20171114</td>
@@ -529,6 +669,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">60</td>
 <td align="center">73</td>
 <td align="center">46</td>
+<td align="center">60</td>
+<td align="center">60</td>
+<td align="center">1</td>
+<td align="center">Final</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20171047</td>
@@ -536,6 +680,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">47</td>
 <td align="center">47</td>
 <td align="center">46</td>
+<td align="center">53</td>
+<td align="center">48</td>
+<td align="center">0</td>
+<td align="center">Final</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20171049</td>
@@ -543,6 +691,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">NA</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">0</td>
+<td align="center">12</td>
+<td align="center">Reprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20170193</td>
@@ -550,6 +702,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">46</td>
 <td align="center">60</td>
 <td align="center">46</td>
+<td align="center">33</td>
+<td align="center">46</td>
+<td align="center">1</td>
+<td align="center">Final</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20176982</td>
@@ -557,6 +713,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">46</td>
 <td align="center">33</td>
 <td align="center">NA</td>
+<td align="center">60</td>
+<td align="center">35</td>
+<td align="center">0</td>
+<td align="center">Reprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20166177</td>
@@ -564,6 +724,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">60</td>
 <td align="center">60</td>
 <td align="center">46</td>
+<td align="center">40</td>
+<td align="center">52</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20176506</td>
@@ -571,6 +735,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">60</td>
 <td align="center">47</td>
 <td align="center">46</td>
+<td align="center">67</td>
+<td align="center">55</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20177015</td>
@@ -578,6 +746,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">20</td>
 <td align="center">47</td>
 <td align="center">16</td>
+<td align="center">60</td>
+<td align="center">36</td>
+<td align="center">0</td>
+<td align="center">Reprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20171175</td>
@@ -585,6 +757,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">60</td>
 <td align="center">73</td>
 <td align="center">46</td>
+<td align="center">47</td>
+<td align="center">56</td>
+<td align="center">1</td>
+<td align="center">Final</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20171111</td>
@@ -592,6 +768,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">60</td>
 <td align="center">20</td>
 <td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">20</td>
+<td align="center">6</td>
+<td align="center">Reprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20171064</td>
@@ -599,6 +779,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">73</td>
 <td align="center">73</td>
 <td align="center">73</td>
+<td align="center">93</td>
+<td align="center">78</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20171130</td>
@@ -606,13 +790,21 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">73</td>
 <td align="center">47</td>
 <td align="center">60</td>
+<td align="center">53</td>
+<td align="center">58</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20171059</td>
 <td align="left">NICOLE HALANA GUISKA</td>
 <td align="center">73</td>
 <td align="center">73</td>
-<td align="center">??</td>
+<td align="center">ANULADA</td>
+<td align="center">80</td>
+<td align="center">75</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20171165</td>
@@ -620,6 +812,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">87</td>
 <td align="center">60</td>
 <td align="center">16</td>
+<td align="center">20</td>
+<td align="center">46</td>
+<td align="center">2</td>
+<td align="center">Final</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20171124</td>
@@ -627,6 +823,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">73</td>
 <td align="center">33</td>
 <td align="center">33</td>
+<td align="center">40</td>
+<td align="center">45</td>
+<td align="center">0</td>
+<td align="center">Final</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20171051</td>
@@ -634,6 +834,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">73</td>
 <td align="center">60</td>
 <td align="center">60</td>
+<td align="center">47</td>
+<td align="center">60</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20171083</td>
@@ -641,6 +845,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">73</td>
 <td align="center">33</td>
 <td align="center">60</td>
+<td align="center">60</td>
+<td align="center">57</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20170234</td>
@@ -648,6 +856,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">34</td>
 <td align="center">NA</td>
 <td align="center">NA</td>
+<td align="center">NA</td>
+<td align="center">9</td>
+<td align="center">9</td>
+<td align="center">Reprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20170141</td>
@@ -655,6 +867,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">60</td>
 <td align="center">33</td>
 <td align="center">46</td>
+<td align="center">67</td>
+<td align="center">51</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20171176</td>
@@ -662,6 +878,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">73</td>
 <td align="center">60</td>
 <td align="center">33</td>
+<td align="center">67</td>
+<td align="center">58</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20171102</td>
@@ -669,6 +889,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">73</td>
 <td align="center">60</td>
 <td align="center">33</td>
+<td align="center">53</td>
+<td align="center">55</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="even">
 <td align="left">GRR20166757</td>
@@ -676,6 +900,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">47</td>
 <td align="center">73</td>
 <td align="center">73</td>
+<td align="center">60</td>
+<td align="center">63</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 <tr class="odd">
 <td align="left">GRR20171053</td>
@@ -683,6 +911,10 @@ kable(prova1, align = c(&quot;l&quot;,&quot;l&quot;,&quot;c&quot;,&quot;c&quot;,
 <td align="center">73</td>
 <td align="center">47</td>
 <td align="center">20</td>
+<td align="center">73</td>
+<td align="center">53</td>
+<td align="center">0</td>
+<td align="center">Aprovado</td>
 </tr>
 </tbody>
 </table>
